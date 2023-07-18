@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratRomanMedium.ttf"); font-family : "Montserrat-Medium"; font-weight : 500;  }
+@font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratRomanRegular.ttf"); font-family : "Montserrat-Regular"; font-weight : 400;  }
+@font-face { font-display: swap; font-style : normal; src: url("assets/fonts/MontserratItalicRegular.ttf"); font-family : "Montserrat"; font-weight : 400;  } */
+@font-face { font-display: swap; font-style : normal; src: url("/Users/malena/ada_perso/projets_perso/portfolio/portfolio/public/fonts/Canobis-Regular.otf"); font-family : "Canobis Free-Regular"; font-weight : 400;  }
