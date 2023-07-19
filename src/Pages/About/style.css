@@ -39,7 +39,7 @@ body {
 }
 
 .about-text {
-    font-size: 0.9vw; 
+    font-size: 0.8vw; 
     font-weight: 200;
     margin: 0; 
     text-align: left; 
@@ -99,7 +99,3 @@ body {
     border: pink solid
 } */
 
-
-.arrow_top {
-    
-}

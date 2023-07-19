@@ -6,13 +6,17 @@ import ArrowNext from "../../Components/ArrowNext";
 export const About = () => {
 
     return (
+
         <div className="container">
-            <div className="arrow_top"> 
-                <ArrowPrevious/>
-            </div>
             <img className="star" alt="Image" src="src/images/image 1.svg" />
             <h1 className="title">about</h1>
-            <p className="about-text">I’m looking for an internship starting in october. blablabli blablablou blabliliblabl iebbk; sbfksw bqbnw :kfbomrhqlbflf</p>
+            <div className="about-text">
+                    <p>Hi there,</p>
+                    <p>I'm Malena, developer apprentice at Ada Tech School since January 2023.</p>
+                    <p>I used to be a cheffe in a restaurant, conceiving and designing courses as well as conceiving and designing apps is something I am passionate about.</p>
+                    <p>I develop with Javascript and am currently learning Java. I like to use tools such as React, Next, MongoDB. Go check my repositories to learn about all the tools I'm learning.</p>
+                    <p>I'm looking for a one-year apprenticeship starting between October 23 and February 24 - let's get in touch !</p>
+            </div>
                 <div className="icons_container">
                     <img src = "src/images/TOOLS.svg"/>
                     <img src = "src/images/SOCIAL.svg"/>
