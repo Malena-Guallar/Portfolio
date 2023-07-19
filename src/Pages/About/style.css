@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    background-color: #FFF1E3;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 100%;
+    position:relative;
+    color: #FF372F;
+    font-family: "Montserrat"
+}
+
+.star {
+    position: absolute;
+    height: 25vw;
+    opacity: 50%;
+    top: -5%;
+    left: -5%
+}
+
+.title {
+    font-family: "Canobis";
+    font-size: 5vw;
+    font-weight: 400;
+    letter-spacing: 5.76px;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    width: 70%;
+    margin: 0;
+}
+
+.about-text {
+    font-size: 0.9vw; 
+    font-weight: 200;
+    margin: 0; 
+    text-align: left; 
+    position: absolute;
+    top: 40%;
+    right: 65%;
+    width: 400px;
+}
+
+.icons_container {
+    width : 300px;
+}
+
+.languages_container {
+    border: solid pink 2px;
+    position: absolute;
+    bottom: -20%;
+    text-align: center;
+}
