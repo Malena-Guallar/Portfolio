@@ -5,13 +5,16 @@ body {
   padding: 0;
 }
 
+.home {
+  background-image: url("/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/images/HomeBG.png");
+  background-size: cover;
+}
+
 .container {
   height: 100vh
 }
 
 .home {
-  background-image: url("/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/images/HomeBG.png");
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
