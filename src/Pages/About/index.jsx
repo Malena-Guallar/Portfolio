@@ -14,7 +14,9 @@ export const About = () => {
                     <p>Hi there,</p>
                     <p>I'm Malena, developer apprentice at Ada Tech School since January 2023.</p>
                     <p>I used to be a cheffe in a restaurant, conceiving and designing courses as well as conceiving and designing apps is something I am passionate about.</p>
-                    <p>I develop with Javascript and am currently learning Java. I like to use tools such as React, Next, MongoDB. Go check my repositories to learn about all the tools I'm learning.</p>
+                    <p>I develop with Javascript and am currently learning Java. I like to use tools such as React, Next, MongoDB. </p>
+                    <p>I love tests and cleancode. </p>
+                    <p>Go check my repositories to learn about all the tools I'm learning.</p>
                     <p>I'm looking for a one-year apprenticeship starting between October 23 and February 24 - let's get in touch !</p>
             </div>
                 <div className="icons_container">

@@ -57,6 +57,12 @@ body {
     left: 50%;
 }
 
+.arrow_bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 5%
+}
+
 /* .languages_container {
     width: 300px;
     position: absolute;

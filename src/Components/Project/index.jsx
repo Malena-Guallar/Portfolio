@@ -1,6 +1,7 @@
 import React from "react";
 import "../Project/style.css"
 import { Browser } from "../Browser_window";
+import ArrowNext from "../ArrowNext/index";
 
 const Project = ({ titre, content, img, link }) => {
 
@@ -15,7 +16,12 @@ const Project = ({ titre, content, img, link }) => {
                 <a href={link} target="_blank" rel="noopener noreferrer">repo github</a>
             </div>
             <img src={img} />
-            <Browser/>
+            <div className="browser">
+                <Browser/>
+                <div className="arrow">
+                    <ArrowNext/>    
+                </div>
+            </div>
         </div>
     )
 }
