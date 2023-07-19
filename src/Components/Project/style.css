@@ -1,0 +1,43 @@
+.project_container {
+    background-color: #FFF1E3;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    color: #FF372F;
+    font-family: "Montserrat"
+}
+
+.projects {
+    font-family: "Canobis";
+    font-size: 7vw;
+    font-weight: 400;
+    letter-spacing: 3px;
+    opacity: 40%;
+    position: absolute;
+    top: -5%;
+    left: 3%;
+}
+
+.infos_container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.project_title {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.project_content {
+    margin-top: -30px;
+    width: 500px;
+    font-weight: 200;
+}
+
+a {
+    color: #FF372F;
+    font-size: 110%;
+}
