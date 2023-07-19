@@ -92,14 +92,13 @@ body {
     width: 3vw; 
     position: absolute;
     top: 55%;
+    left: 49%;
 }
   
 .home .arrow {
     height: 1.2vw; 
     width: 1vw;
-}
-
-.arrow {
     position: absolute;
     bottom: 5%
 }
+

@@ -26,6 +26,23 @@
     left: 5%;
 }
 
+.infos_container a.motion-link {
+    color: #FF372F;
+    font-size: 110%;
+    font-weight: 200;
+    background-image: linear-gradient(to right, #FF372F 50%, #FFF1E3 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s;
+    /* -webkit-background-clip: text;
+    background-clip: text; */
+  }
+  
+  .infos_container a.motion-link:hover {
+    background-position: left;
+    color: #FFF1E3;
+  }
+
 .project_title {
     font-size: 3vw;
     font-weight: 400;
