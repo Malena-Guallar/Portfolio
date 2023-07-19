@@ -1,5 +1,4 @@
 import React from "react";
-import "../ArrowNext/style.css"
 
 const ArrowNext = () => {
 
