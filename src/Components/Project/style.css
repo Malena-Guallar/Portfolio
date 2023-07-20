@@ -34,8 +34,6 @@
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.5s;
-    /* -webkit-background-clip: text;
-    background-clip: text; */
   }
   
   .infos_container a.motion-link:hover {
@@ -52,6 +50,7 @@
     margin-top: -30px;
     width: 400px;
     font-weight: 200;
+    font-size: 16px
 }
 
 a {

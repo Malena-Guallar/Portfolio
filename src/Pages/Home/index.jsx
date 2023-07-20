@@ -28,7 +28,8 @@ export const Home = () => {
 
         <motion.img className="image" alt="Image" src="src/images/image 1.svg" animate={{rotate: [0, 90, 180, 270, 360]}} transition={{duration: 10, repeat: Infinity, ease:"linear"}}/>
         <div className="arrow">
-          <ArrowNext />
+          <ArrowNext 
+            link="http://localhost:5173/about"/>
 
         </div>
       </div>
