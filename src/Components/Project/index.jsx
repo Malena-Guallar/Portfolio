@@ -1,7 +1,6 @@
 import React from "react";
 import "../Project/style.css"
 import { Browser } from "../Browser_window";
-import ArrowNext from "../ArrowNext/index";
 import { motion } from "framer-motion"
 
 const Project = ({ titre, content, img, link }) => {
@@ -23,9 +22,6 @@ const Project = ({ titre, content, img, link }) => {
             <img src={img} />
             <div className="browser">
                 <Browser/>
-                <div className="arrow">
-                    <ArrowNext/>    
-                </div>
             </div>
         </div>
     )

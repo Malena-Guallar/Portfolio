@@ -1,6 +1,5 @@
 import React from "react";
 import "/src/Pages/Home/style.css";
-import ArrowNext from "/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/Components/ArrowNext/index.jsx"
 import { motion } from "framer-motion"
 
 export const Home = () => {
@@ -27,11 +26,7 @@ export const Home = () => {
           I’m flexible ! I can start between october and february.</motion.p>
 
         <motion.img className="image" alt="Image" src="src/images/image 1.svg" animate={{rotate: [0, 90, 180, 270, 360]}} transition={{duration: 10, repeat: Infinity, ease:"linear"}}/>
-        <div className="arrow">
-          <ArrowNext 
-            link="http://localhost:5173/about"/>
 
-        </div>
       </div>
     </div>
   );

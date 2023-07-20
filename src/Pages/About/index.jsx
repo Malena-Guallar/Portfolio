@@ -1,7 +1,5 @@
 import React from "react";
 import "../About/style.css";
-import ArrowPrevious from "/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/Components/ArrowPrevious/index.jsx"
-import ArrowNext from "../../Components/ArrowNext";
 import { motion } from "framer-motion";
 
 export const About = () => {
@@ -26,9 +24,6 @@ export const About = () => {
                     <img src = "/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/images/TOOLS.svg"/>
                     <img src = "src/images/SOCIAL.svg"/>
                 </div>
-            <div className="arrow_bottom"> 
-                <ArrowNext/>
-            </div>
         </div>
     )
 }
