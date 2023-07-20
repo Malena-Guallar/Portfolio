@@ -41,13 +41,13 @@ export const Global = () => {
 
 
     return (
-        <div {...whereAmI()} style={{ overflow: "hidden"}}>
+        <div {...whereAmI()} style={{ height: "100vh", overflow: "hidden"}}>
             <motion.div
             style={{ display: "flex", flexDirection: "column" }}
             animate={controls}
             >
                 {pages.map((Page, index) => (
-                    <div key={index} style={{minHeight: "100%"}}>
+                    <div key={index} style={{minHeight: "100vh"}}>
                         <Page />
                     </div>
                 ))};
