@@ -2,6 +2,7 @@ import React from "react";
 import "../About/style.css";
 import ArrowPrevious from "/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/Components/ArrowPrevious/index.jsx"
 import ArrowNext from "../../Components/ArrowNext";
+import { motion } from "framer-motion";
 
 export const About = () => {
 
@@ -9,8 +10,9 @@ export const About = () => {
 
         <div className="container">
             <img className="star" alt="Image" src="src/images/image 1.svg" />
-            <h1 className="title">about</h1>
-            <div className="about-text">
+            <motion.h1 className="title" initial={{ x: 160, y: 873 }} animate={{ x: 0, y:0 }} transition={{ duration: 0.5 }}>
+                about</motion.h1>
+            <motion.div className="about-text" initial={{ x: -200, y: -873 }} animate={{ x: 0, y:0 }} transition={{ duration: 0.5 }}>
                     <p>Hi there,</p>
                     <p>I'm Malena, developer apprentice at Ada Tech School since January 2023.</p>
                     <p>I used to be a cheffe in a restaurant, conceiving and designing courses as well as conceiving and designing apps is something I am passionate about.</p>
@@ -18,9 +20,10 @@ export const About = () => {
                     <p>I love tests and cleancode. </p>
                     <p>Go check my repositories to learn about all the tools I'm learning.</p>
                     <p>I'm looking for a one-year apprenticeship starting between October 23 and February 24 - let's get in touch !</p>
-            </div>
+            </motion.div>
                 <div className="icons_container">
-                    <img src = "src/images/TOOLS.svg"/>
+                    <p>coucou les images</p>
+                    <img src = "/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/images/TOOLS.svg"/>
                     <img src = "src/images/SOCIAL.svg"/>
                 </div>
             <div className="arrow_bottom"> 
