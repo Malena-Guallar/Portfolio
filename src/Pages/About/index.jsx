@@ -20,9 +20,8 @@ export const About = () => {
                     <p>I'm looking for a one-year apprenticeship starting between October 23 and February 24 - let's get in touch !</p>
             </motion.div>
                 <div className="icons_container">
-                    <p>coucou les images</p>
-                    <img src = "/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/images/TOOLS.svg"/>
-                    <img src = "src/images/SOCIAL.svg"/>
+                    <img src = "/public/images/TOOLS.svg"/>
+                    <img src = "/public/images/SOCIAL.svg"/>
                 </div>
         </div>
     )

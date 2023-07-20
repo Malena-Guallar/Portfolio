@@ -15,7 +15,7 @@ export const Project_2 = () => {
                     <p>➜ as a bonus we used an API and displayed data on the home page </p>
                     <p className="tools">Tools and languages : PHP, mySql, html, Css, Postman</p>
                 </div>}
-            img={"/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/src/images/afterlife.png"}
+            img={"public/images/afterlife.png"}
             link={"https://github.com/Malena-Guallar/Social_network"}/>
         </>
     )
