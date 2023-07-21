@@ -1,0 +1,35 @@
+.footer {
+    background-color: #FFF1E3;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #FF372F;
+    border: solid black 2px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.footer_infos {
+    border: blue solid 1px;
+    position: absolute;
+    bottom: 0;
+    font-size: 500%
+
+}
+.footer_infos p,
+.footer_infos img {
+margin-right: 10px;
+display: inline;
+}
+
+.M,
+.C,
+.latlong {
+    width: 30px;
+    height: 30px;
+}
+
+.M {
+    top: 10%
+}

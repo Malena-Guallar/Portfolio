@@ -1,7 +1,6 @@
 import React from "react";
 import Project from "../../Components/Project";
 import "./style.css";
-// import Footer from "../../Components/Footer/index.jsx";
 
 export const Dataviz = () => {
 
@@ -16,7 +15,6 @@ export const Dataviz = () => {
                 </div>}
             img={"public/images/dataviz.png"}
             link={"https://github.com/Malena-Guallar/Dataviz-API"}/>
-            {/* <Footer /> */}
         </>
     )
 }

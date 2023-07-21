@@ -32,26 +32,27 @@ body {
     font-weight: 400;
     letter-spacing: 5.76px;
     position: absolute;
-    top: 20%;
-    left: 12%;
+    top: 15%;
+    left: 7%;
     width: 70%;
     margin: 0;
 }
 
 .about-text {
-    font-size: 0.85vw; 
+    font-size: 1.1vw; 
     font-weight: 200;
     margin: 0; 
     text-align: left; 
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 65%;
     width: 400px;
     min-width: 400px;
 }
 
 .about .infos_container .tools_container {
-    position: relative;
+    position: absolute;
+    right: 250px;
 }
 
 .about .infos_container .tools_container .star1 {
@@ -65,8 +66,8 @@ body {
 
 .tools_title {
     position: absolute;
-    right: -1080px;
-    top: 15px;
+    right: -1090px;
+    top: 5px;
     font-weight: 400
 }
 
@@ -77,6 +78,41 @@ body {
     right: -1600px;
     top: 40px;
 
+}
+
+.about .infos_container .social_container .star2 {
+    height: 4vw; 
+    width: 4vw; 
+    position: absolute;
+    right: -900px;
+    opacity: 40%;
+    top: 200px;
+}
+
+.about .infos_container .social_container {
+    position: absolute;
+    right: 250px;
+}
+.social_title {
+    position: absolute;
+    right: -955px;
+    top: 205px;
+    font-weight: 400
+}
+
+.social_icons {
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    right: -930px;
+    top: 280px;
+}
+
+.links {
+    position: absolute;
+    font-size: 90%;
+    left: 930px;
+    top: 296px;
 }
 
 .waves {

@@ -7,8 +7,9 @@ import { E_commerce } from "../E_commerce/index.jsx";
 import { Dataviz } from "../Dataviz/index.jsx";
 import { motion, useAnimation } from "framer-motion";
 import { useGesture } from "react-use-gesture";
+import { Footer } from "../Footer";
 
-const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz];
+const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
 const totalPages = pages.length;
 const sensitivity = 2;
 
@@ -47,10 +48,10 @@ export const Global = () => {
             animate={controls}
             >
                 {pages.map((Page, index) => (
-                    <div key={index} style={{minHeight: "100vh"}}>
+                    <div key={index} style={{minHeight: "100%"}}>
                         <Page />
                     </div>
-                ))};
+                ))}
 
             </motion.div>
 
