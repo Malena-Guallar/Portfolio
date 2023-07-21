@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-.container {
+.about {
     background-color: #FFF1E3;
     background-size: cover;
     height: 100vh;
@@ -50,38 +50,33 @@ body {
     min-width: 400px;
 }
 
-.tools {
-    width: auto;
-    right: 40%;
-    top: 10%;
+.about .infos_container .tools_container {
+    position: relative;
 }
 
-.social {
-    width: auto;
-    right: 20%;
-    top: 10%;
-}
-
-.github_link {
+.about .infos_container .tools_container .star1 {
+    height: 4vw; 
+    width: 4vw; 
     position: absolute;
-    top: 20%;
-    right: 25%;
-    z-index: 1;
+    right: -900px;
+    opacity: 40%
 }
 
-.linkedin_link {
+
+.tools_title {
     position: absolute;
-    top: 26%;
-    right: 24.5%;
-    z-index: 1;
+    right: -1080px;
+    top: 15px;
+    font-weight: 400
 }
 
-.insta_link {
+.tools_icons {
     position: absolute;
-    font-weight: 200;
-    text-decoration: underline;
-    top: 30%;
-    right: 20%;
+    width: 800px;
+    height: 150px;
+    right: -1600px;
+    top: 40px;
+
 }
 
 .waves {
