@@ -7,4 +7,7 @@
     width: 7%;
     height: 15%;
     opacity: 40%;
+    top: 60%;
+    right: 5%;
+    z-index: 1;
 }

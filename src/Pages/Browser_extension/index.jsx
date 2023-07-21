@@ -1,7 +1,8 @@
 import React from "react";
 import Project from "../../Components/Project";
+import "../Browser_extension/style.css"
 
-export const Project_1 = () => {
+export const Browser_extension = () => {
 
     return (
         <>
@@ -15,6 +16,7 @@ export const Project_1 = () => {
                 </div>}
             img={"public/images/brower_extension.png"}
             link={"https://github.com/Malena-Guallar/Browser_extension"}/>
+            <img className="waves_4" src="public/images/waves_2.png"></img>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import Project from "../../Components/Project";
-import "../Project_4/style.css"
+import "./style.css"
 
-export const Project_4 = () => {
+export const Dataviz = () => {
 
     return (
         <>

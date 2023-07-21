@@ -20,9 +20,9 @@ const Project = ({ titre, content, img, link }) => {
                     href={link}>repo github</motion.a>
             </div>
             <img src={img} />
-            <div className="browser">
+            {/* <div className="browser">
                 <Browser/>
-            </div>
+            </div> */}
         </div>
     )
 }

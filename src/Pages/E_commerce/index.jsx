@@ -1,8 +1,8 @@
 import React from "react";
 import Project from "../../Components/Project";
-import "../Project_3/style.css"
+import "./style.css"
 
-export const Project_3 = () => {
+export const E_commerce = () => {
 
     return (
         <>
