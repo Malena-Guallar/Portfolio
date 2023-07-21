@@ -8,7 +8,7 @@ import { Project_4 } from "../Project_4/index.jsx";
 import { motion, useAnimation } from "framer-motion";
 import { useGesture } from "react-use-gesture";
 
-const pages = [Home, About, Project_1, Project_2, Project_3, Project_4];
+const pages = [Home, About, Project_3, Project_2, Project_1, Project_4];
 const totalPages = pages.length;
 const sensitivity = 2;
 

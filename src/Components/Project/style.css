@@ -62,7 +62,8 @@ a {
 .browser {
     position: absolute;
     top : 25%;
-    right: 5%
+    right: 5%;
+    opacity: 40%
 }
 
 .arrow {

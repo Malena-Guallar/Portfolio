@@ -50,58 +50,43 @@ body {
     min-width: 400px;
 }
 
-.icons_container {
-    width: fit-content;
-    position: relative;
-    top: 25%;
-    left: 50%;
+.tools {
+    width: auto;
+    right: 40%;
+    top: 10%;
 }
 
-.arrow_bottom {
-    position: absolute;
-    left: 50%;
-    bottom: 5%
+.social {
+    width: auto;
+    right: 20%;
+    top: 10%;
 }
 
-/* .languages_container {
-    width: 300px;
+.github_link {
     position: absolute;
-    right: -5%;
     top: 20%;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-} */
-
-/* .social_container {
-    width: 300px;
-    position: relative;
-    right: -30%;
-    bottom: 51.5%;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-} */
-
-/* .title-1,
-.title-2 {
-    font-weight: 300;    
+    right: 25%;
+    z-index: 1;
 }
 
-.text_ex {
-    font-weight: 300;    
-    font-size: 80%;
-    width: 250px;
-    font-style: italic;
-    align-content: center;
-    margin-left: 25px;
+.linkedin_link {
+    position: absolute;
+    top: 26%;
+    right: 24.5%;
+    z-index: 1;
 }
 
-.social_icons {
-    position: relative;
-    align-content: left;
-    align-items: left;
-    justify-content: left;
-    border: pink solid
-} */
+.insta_link {
+    position: absolute;
+    font-weight: 200;
+    text-decoration: underline;
+    top: 30%;
+    right: 20%;
+}
 
+.waves {
+    width: auto;
+    opacity: 60%;
+    top: 75%;
+    left: 10%;
+}

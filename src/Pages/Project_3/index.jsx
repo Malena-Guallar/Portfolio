@@ -18,6 +18,7 @@ export const Project_3 = () => {
                 </div>}
             img={"portfolio/_Portfolio/src/images/brower_extension.png"}
             link={"https://github.com/Malena-Guallar/Browser_extension"}/>
+            <img className="waves_1" src="public/images/waves_2.png"/>
         </>
     )
 }
