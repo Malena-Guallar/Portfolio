@@ -14,9 +14,9 @@ export const Browser_extension = () => {
                     <p>During this project I mostly worked on the global architecture of the extension : creating a form and implementing functions to stock data in browser local storage, then displaying a custom page for each user. I customed the API requests with the data from local storage and the date, to display a horoscope that changes in accordance with the sign of the user, and of course changes everyday. We chose to display a nice design with animation from a SVG code we found on the web on top of some CSS work.</p>
                     <p className="tools">Tools and languages : JavaScript, html, css, svg, Postman</p>
                 </div>}
-            img={"public/images/brower_extension.png"}
+            img={"public/images/browserextension.png"}
             link={"https://github.com/Malena-Guallar/Browser_extension"}/>
-            <img className="waves_4" src="/public/images/waves_2.png"></img>
+            <img className="waves_4" src="/public/images/waves2.png"></img>
         </>
     )
 }
