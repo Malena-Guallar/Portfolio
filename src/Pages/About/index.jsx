@@ -6,8 +6,8 @@ export const About = () => {
     return (
 
         <div className="about">
-            <img className="waves" src="public/images/waves1.png"></img>
-            <img className="star" alt="Image" src="src/images/image1.svg" />
+            <img className="waves" src="./Portfolio/images/waves1.png"></img>
+            <img className="star" alt="Image" src="./Portfolio/images/image1.svg" />
             <h1 className="title">about</h1>
             <div className="about-text">
                     <p>Hi there,</p>
@@ -22,14 +22,14 @@ export const About = () => {
 
             <div className="infos_container">
                 <div className="tools_container">
-                    <img className="star1" src="./_Portfolio/images/image1.svg"></img>
+                    <img className="star1" src="./Portfolio/images/image1.svg"></img>
                     <h3 className="tools_title">TOOLS & LANGUAGES</h3>
-                    <img className="tools_icons" src="./_Portfolio/images/toolsicons.png"></img>
+                    <img className="tools_icons" src="./Portfolio/images/toolsicons.png"></img>
                 </div>
                 <div className="social_container">
-                    <img className="star2" src="./_Portfolio/images/image1.svg"></img>
+                    <img className="star2" src="./Portfolio/images/image1.svg"></img>
                     <h3 className="social_title">SOCIAL</h3>
-                    <img className="social_icons" src="./_Portfolio/images/socialicons.png"></img>
+                    <img className="social_icons" src="./Portfolio/images/socialicons.png"></img>
                     <div className="links">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a>
                         <br/>
