@@ -1,6 +1,6 @@
 # Portfolio - Personnal project
 
-Work in progress
+Work in progress - web version only
 <br>
 <br>
 
