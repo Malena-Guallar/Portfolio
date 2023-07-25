@@ -6,8 +6,8 @@ export const About = () => {
     return (
 
         <div className="about">
-            <img className="waves" src="public/images/waves_1.png"></img>
-            <img className="star" alt="Image" src="src/images/image 1.svg" />
+            <img className="waves" src="/images/waves_1.png"></img>
+            <img className="star" alt="Image" src="/images/image 1.svg" />
             <h1 className="title">about</h1>
             <div className="about-text">
                     <p>Hi there,</p>
@@ -22,14 +22,14 @@ export const About = () => {
 
             <div className="infos_container">
                 <div className="tools_container">
-                    <img className="star1" src="public/images/image 1.svg"></img>
+                    <img className="star1" src="/images/image 1.svg"></img>
                     <h3 className="tools_title">TOOLS & LANGUAGES</h3>
-                    <img className="tools_icons" src="public/images/tools_icons.png"></img>
+                    <img className="tools_icons" src="/images/tools_icons.png"></img>
                 </div>
                 <div className="social_container">
-                    <img className="star2" src="public/images/image 1.svg"></img>
+                    <img className="star2" src="/images/image 1.svg"></img>
                     <h3 className="social_title">SOCIAL</h3>
-                    <img className="social_icons" src="public/images/social_icons.png"></img>
+                    <img className="social_icons" src="/images/social_icons.png"></img>
                     <div className="links">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a>
                         <br/>
