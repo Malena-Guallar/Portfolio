@@ -25,7 +25,7 @@ export const Home = () => {
         <motion.p className="text-wrapper-5" initial={{ x: -400, y: -600}} animate={{x: 0, y:0}} transition={{duration: 0.5}}>
           I’m flexible ! I can start between october and february.</motion.p>
 
-        <motion.img className="image" alt="Image" src="/assets/image_1.svg" animate={{rotate: [0, 90, 180, 270, 360]}} transition={{duration: 10, repeat: Infinity, ease:"linear"}}/>
+        <motion.img className="image" alt="Image" src="/public/images/image_1.svg" animate={{rotate: [0, 90, 180, 270, 360]}} transition={{duration: 10, repeat: Infinity, ease:"linear"}}/>
 
       </div>
     </div>
