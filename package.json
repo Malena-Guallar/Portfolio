@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://Malena-Guallar.github.io/portfolio",
+  "homepage": "http://malena-guallar.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
