@@ -22,12 +22,12 @@ export const About = () => {
 
             <div className="infos_container">
                 <div className="tools_container">
-                    <img className="star1" src="/assets/image 1.svg"></img>
+                    <img className="star1" src="/assets/image_1.svg"></img>
                     <h3 className="tools_title">TOOLS & LANGUAGES</h3>
-                    <img className="tools_icons" src="/assets/tools_icons.png"></img>
+                    <img className="tools_icons" src="portfolio/_Portfolio/dist/images/tools_icons.png"></img>
                 </div>
                 <div className="social_container">
-                    <img className="star2" src="/assets/image 1.svg"></img>
+                    <img className="star2" src="/assets/image_1.svg"></img>
                     <h3 className="social_title">SOCIAL</h3>
                     <img className="social_icons" src="/assets/social_icons.png"></img>
                     <div className="links">
