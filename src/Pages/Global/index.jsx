@@ -11,7 +11,7 @@ import { Footer } from "../Footer";
 
 const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
 const totalPages = pages.length;
-const sensitivity = 10;
+const sensitivity = 2;
 
 export const Global = () => {
     const controls = useAnimation();
