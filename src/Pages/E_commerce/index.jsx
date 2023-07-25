@@ -16,9 +16,9 @@ export const E_commerce = () => {
                     <p>That project was also a good opportunity to work on tests. We spent two days unit testing our server, routes and api with Jest.</p>
                     <p className="tools">Tools and languages we used : JS, React, NodeJs, MongoDB, Express, Vite, Html, Css, Tailwind, Git, Figma, Jest, Postman.</p>
                 </div>}
-            img={"portfolio/_Portfolio/src/images/browserextension.png"}
+            img={"./images/browserextension.png"}
             link={"https://github.com/Malena-Guallar/Browser_extension"}/>
-            <img className="waves_1" src="public/images/waves2.png"/>
+            <img className="waves_1" src="./images/waves2.png"/>
         </>
     )
 }

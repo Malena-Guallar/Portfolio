@@ -15,9 +15,9 @@ export const Social_network = () => {
                     <p>➜ as a bonus we used an API and displayed data on the home page </p>
                     <p className="tools">Tools and languages : PHP, mySql, html, Css, Postman</p>
                 </div>}
-            img={"public/images/afterlife.png"}
+            img={"./images/afterlife.png"}
             link={"https://github.com/Malena-Guallar/Social_network"}/>
-            <img className="waves_3" src="public/images/waves3.png" />
+            <img className="waves_3" src="./images/waves3.png" />
         </>
     )
 }
