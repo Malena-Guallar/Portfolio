@@ -6,7 +6,7 @@ body {
 }
 
 .home {
-  background-image: url("/Users/malena/ada_perso/projets_perso/portfolio/portfolio/_Portfolio/public/images/HomeBG.png");
+  background-image: url("./images/HomeBG.png");
   background-size: cover;
 }
 

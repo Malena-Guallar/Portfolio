@@ -1,6 +1,5 @@
 import React from "react";
 import "../Project/style.css"
-import { Browser } from "../Browser_window";
 import { motion } from "framer-motion"
 
 const Project = ({ titre, content, img, link }) => {
@@ -20,9 +19,6 @@ const Project = ({ titre, content, img, link }) => {
                     href={link}>repo github</motion.a>
             </div>
             <img src={img} />
-            {/* <div className="browser">
-                <Browser/>
-            </div> */}
         </div>
     )
 }
