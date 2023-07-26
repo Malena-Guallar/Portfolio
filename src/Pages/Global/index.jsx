@@ -6,12 +6,11 @@ import { Social_network } from "../Social_network/index.jsx";
 import { E_commerce } from "../E_commerce/index.jsx";
 import { Dataviz } from "../Dataviz/index.jsx";
 import { motion, useAnimation } from "framer-motion";
-// import { useGesture } from "react-use-gesture";
 import { Footer } from "../Footer";
 
 const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
 const totalPages = pages.length;
-const sensitivity = 0.05;
+const sensitivity = 0.2;
 
 export const Global = () => {
     const controls = useAnimation();
@@ -39,6 +38,8 @@ export const Global = () => {
         }
 
         scrollCounter.current += deltaY * sensitivity;
+
+        console.log("scrollcounter", scrollCounter.current)
         
         if (scrollCounter.current >= sensitivity && pageRef.current < totalPages - 1) {
             pageRef.current++;
@@ -46,6 +47,7 @@ export const Global = () => {
         } else if (scrollCounter.current <= -sensitivity && pageRef.current > 0) {
             pageRef.current--;
             scrollCounter.current = 0;
+            console.log("ON REVIENT A 0", scrollCounter.current)
         }
             scrollToPage(pageRef.current);
     };
@@ -55,6 +57,7 @@ export const Global = () => {
         
         window.addEventListener("touchstart", (e) => {
             const touchStartY = e.touches[0].clientY;
+            console.log("TOUCHSTART")
             
             const handleTouchMove = (event) => {
                 const touchY = event.touches[0].clientY;
@@ -71,7 +74,7 @@ export const Global = () => {
             window.addEventListener("touchend", handleTouchEnd);
         });
         
-        
+
         return () => {
             window.removeEventListener("wheel", handleScroll);
             window.removeEventListener("touchstart", handleScroll);
@@ -94,19 +97,3 @@ return (
         </div>
 )
 };
-
-
-// const whereAmI = useGesture({
-//     onWheel: ({ delta: [, deltaY] }) => {
-//         scrollCounter.current += Math.sign(deltaY);
-
-//         if (scrollCounter.current >= sensitivity && pageRef.current < totalPages - 1) {
-//             pageRef.current++;
-//             scrollCounter.current = 0;
-//         } else if (scrollCounter.current <= -sensitivity && pageRef.current > 0) {
-//             pageRef.current--;
-//             scrollCounter.current = 0;
-//         }
-//         scrollToPage(pageRef.current);
-//     },
-// });
