@@ -11,7 +11,7 @@ import { Footer } from "../Footer";
 
 const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
 const totalPages = pages.length;
-const sensitivity = 20;
+const sensitivity = 0.05;
 
 export const Global = () => {
     const controls = useAnimation();
@@ -27,8 +27,18 @@ export const Global = () => {
     };
 
     const handleScroll = (event) => {
-        const deltaY = event.deltaY;
-        scrollCounter.current += Math.sign(deltaY);
+
+        let deltaY;
+
+        if ("deltaY" in event) {
+            deltaY = event.deltaY;
+        } else if (event.touches.length > 0){
+            deltaY = -(event.touches[0].clientY - event.touches[0].clientYStart);
+        } else {
+            return;
+        }
+
+        scrollCounter.current += deltaY * sensitivity;
         
         if (scrollCounter.current >= sensitivity && pageRef.current < totalPages - 1) {
             pageRef.current++;
@@ -57,9 +67,10 @@ export const Global = () => {
                 window.removeEventListener("touchend", handleTouchEnd);
             };
             
-        window.addEventListener("touchmove", handleTouchMove);
-        window.addEventListener("touchend", handleTouchEnd);
+            window.addEventListener("touchmove", handleTouchMove);
+            window.addEventListener("touchend", handleTouchEnd);
         });
+        
         
         return () => {
             window.removeEventListener("wheel", handleScroll);
