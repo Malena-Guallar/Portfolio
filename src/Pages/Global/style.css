@@ -1,5 +1,9 @@
-.app_container {
+html {
     background-color: #FFF1E3;
+}
+
+.app_container {
     font-family: Montserrat;
     color: #FF372F;
+    min-height: 100vh;
 }
