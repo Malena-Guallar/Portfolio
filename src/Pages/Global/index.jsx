@@ -9,91 +9,17 @@ import { motion, useAnimation } from "framer-motion";
 import { Footer } from "../Footer";
 
 const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
-const totalPages = pages.length;
-const sensitivity = 0.2;
 
 export const Global = () => {
-    const controls = useAnimation();
-    const pageRef = useRef(0);
-    const scrollCounter = useRef(0);
     
-    
-    const scrollToPage = (pageIndex) => {
-        controls.start({
-            y: `-${pageIndex * 100}vh`,
-            transition: {type: "tween", duration: 0.5 },
-        });
-    };
-
-    const handleScroll = (event) => {
-
-        let deltaY;
-
-        if ("deltaY" in event) {
-            deltaY = event.deltaY;
-        } else if (event.touches.length > 0){
-            deltaY = -(event.touches[0].clientY - event.touches[0].clientYStart);
-        } else {
-            return;
-        }
-
-        scrollCounter.current += deltaY * sensitivity;
-
-        console.log("scrollcounter", scrollCounter.current)
-        
-        if (scrollCounter.current >= sensitivity && pageRef.current < totalPages - 1) {
-            pageRef.current++;
-            scrollCounter.current = 0;
-        } else if (scrollCounter.current <= -sensitivity && pageRef.current > 0) {
-            pageRef.current--;
-            scrollCounter.current = 0;
-            console.log("ON REVIENT A 0", scrollCounter.current)
-        }
-            scrollToPage(pageRef.current);
-    };
-
-    useEffect(() => {
-        window.addEventListener("wheel", handleScroll);
-        
-        window.addEventListener("touchstart", (e) => {
-            const touchStartY = e.touches[0].clientY;
-            console.log("TOUCHSTART")
-            
-            const handleTouchMove = (event) => {
-                const touchY = event.touches[0].clientY;
-                const deltaY = touchStartY - touchY;
-                handleScroll({ deltaY });
-            };
-
-            const handleTouchEnd = () => {
-                window.removeEventListener("touchmove", handleTouchMove);
-                window.removeEventListener("touchend", handleTouchEnd);
-            };
-            
-            window.addEventListener("touchmove", handleTouchMove);
-            window.addEventListener("touchend", handleTouchEnd);
-        });
-        
-
-        return () => {
-            window.removeEventListener("wheel", handleScroll);
-            window.removeEventListener("touchstart", handleScroll);
-        };
-    }, []);
-
 
 return (
-    <div style={{ height: "100vh", overflow: "hidden"}}>
-            <motion.div
-            style={{ display: "flex", flexDirection: "column" }}
-            animate={controls}
-            >
-                {pages.map((Page, index) => (
-                    <div key={index} style={{minHeight: "100%"}}>
-                        <Page />
-                    </div>
-                ))}
-            </motion.div>
+     <div>
+        {pages.map((Page, index) => (
+        <div key={index} style={{minHeight: "100%"}}>
+            <Page />
         </div>
+        ))}
+    </div>
 )
 };
