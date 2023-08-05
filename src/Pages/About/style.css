@@ -1,20 +1,20 @@
 .about {
-    border: pink solid 2px;
     min-height: 100vh;
 }
 
-.about-text {
-    border: blue solid 2px;
-    width: 30vh;
-    text-align: justify;
-    margin-left: 40px;
-}
-
 .title-wrapper {
-    border: solid orange 2px;
     display: flex;
     margin-left: 10px;
     position: relative;
+    font-family: Canobis;
+    font-size: 180%;
+    letter-spacing: 0.3rem;
+}
+.about-text {
+    width: 30vh;
+    text-align: justify;
+    margin-left: 40px;
+    font-size: 90%;
 }
 
 .star {
@@ -31,9 +31,13 @@
 
 .tools_container,
 .social_container {
-    border: solid blue 2px;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+}
+
+.tools_container {
+    margin-top: 3rem;
 }
 
 .star1,
@@ -44,26 +48,14 @@
 .tools_title,
 .social_title {
     margin-left: 60px;
+    font-weight: 500
 }
 
-.tools_icons {
-    border: pink 2px solid;
-    width: 200%;
-    margin-left: -1rem;
-}
-
-.div-wrapper {
-    display: flex;
-    margin-left: 
-}
-
-.social_icons {
-    display: flex;
-    left: 10px;
-    width: 17%;
-}
-
-.links {
-    border: solid pink 2px;
-    height: auto;
+.logos_text {
+    font-style: italic;
+    font-size: 80%;
+    width: 260px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+    font-weight: 300;
 }

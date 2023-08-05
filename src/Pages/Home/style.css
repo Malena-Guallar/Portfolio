@@ -4,13 +4,11 @@
     justify-content: center;
     min-height: 100vh;
     align-items: center;
-    border: solid pink 2px
 }
 
 .home {
     display: flex;
     flex-direction: column;
-    border: solid blue 2px;
     height: 80vh;
     width: 35vh;
     align-items: center;
@@ -24,4 +22,13 @@
 .div-wrapper-2 {
     position: absolute; 
     bottom: 5rem;
+    width: 15rem;
+    font-size: 90%;
+}
+
+.text-wrapper-2 {
+    font-family: Canobis;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
 }

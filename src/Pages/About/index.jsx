@@ -26,24 +26,45 @@ export const About = () => {
                 <div className="tools_container">
                     <img className="star1" src="./images/image1.svg" />
                     <h4 className="tools_title">TOOLS & LANGUAGES</h4>
-                    <img className="tools_icons" src="./images/toolsicons.png" />
+                    <div className="logos_wrapper_1">
+                        <table>
+                            <tr>
+                                <td><img src="./images/JS.png" /></td>
+                                <td><img src="./images/HTML.png" /></td>
+                                <td><img src="./images/CSS.png" /></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/NextJS.png" /></td>
+                                <td><img src="./images/React.png" /></td>
+                                <td><img src="./images/Tailwind.png" /></td>  
+                            </tr>
+                            <tr>
+                                <td><img src="./images/Jest.png" /></td>
+                                <td><img src="./images/Figma.png" /></td>
+                            </tr>
+                        </table>
+                        <p className="logos_text">javascript, html, css, nextjs, react, tailwind, jest, figma</p>
+                    </div>
                 </div>
                 <div className="social_container">
                     <img className="star2" src="./images/image1.svg" />
                     <h4 className="social_title">SOCIAL</h4>
-                    <div className="div-wrapper">
-                        <img className="social_icons" src="./images/socialicons.png" />
-                        <div className="links">
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a>
-                            <br/>
-                            <br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/malenaguallar/">linkedin</a>
-                            <br/>
-                            <br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/malena100accent">instagram</a>
-                        </div>
+                    <div className="logos_wrapper_1">
+                        <table>
+                            <tr>
+                                <td><img src="./images/git.png" /></td>
+                                <td><a target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/linkedin.png" /></td>
+                                <td><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/malenaguallar/">linkedin</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/insta.png" /></td>
+                                <td><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/malena100accent">instagram</a></td>
+                            </tr>
+                        </table>
                     </div>
-
                 </div>
             </div>
         </div>
