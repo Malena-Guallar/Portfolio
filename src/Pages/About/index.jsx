@@ -31,15 +31,17 @@ export const About = () => {
                 <div className="social_container">
                     <img className="star2" src="./images/image1.svg" />
                     <h4 className="social_title">SOCIAL</h4>
-                    <img className="social_icons" src="./images/socialicons.png" />
-                    <div className="links">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a>
-                        <br/>
-                        <br/>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/malenaguallar/">linkedin</a>
-                        <br/>
-                        <br/>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/malena100accent">instagram</a>
+                    <div className="div-wrapper">
+                        <img className="social_icons" src="./images/socialicons.png" />
+                        <div className="links">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a>
+                            <br/>
+                            <br/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/malenaguallar/">linkedin</a>
+                            <br/>
+                            <br/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/malena100accent">instagram</a>
+                        </div>
                     </div>
 
                 </div>

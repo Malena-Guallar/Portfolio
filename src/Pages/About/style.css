@@ -28,3 +28,42 @@
 .title {
     margin-left: 30px;
 }
+
+.tools_container,
+.social_container {
+    border: solid blue 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.star1,
+.star2 {
+    position: absolute;
+}
+
+.tools_title,
+.social_title {
+    margin-left: 60px;
+}
+
+.tools_icons {
+    border: pink 2px solid;
+    width: 200%;
+    margin-left: -1rem;
+}
+
+.div-wrapper {
+    display: flex;
+    margin-left: 
+}
+
+.social_icons {
+    display: flex;
+    left: 10px;
+    width: 17%;
+}
+
+.links {
+    border: solid pink 2px;
+    height: auto;
+}
