@@ -18,7 +18,7 @@ const Project = ({ titre, content, img, link }) => {
                     rel="noopener noreferrer"                    
                     href={link}>repo github</motion.a>
             </div>
-            <img src={img} />
+            <img src={img} className="image_project" />
         </div>
     )
 }

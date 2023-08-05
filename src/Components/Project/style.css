@@ -4,7 +4,7 @@
     font-size: 400%;
     letter-spacing: 0.2rem;
     font-weight: 100;
-    opacity: 50%;
+    opacity: 40%;
 }
 
 .infos_container {
@@ -12,4 +12,5 @@
     margin-left: 40px;
     width: 30vh;
     text-align: justify;
+    line-height: 1.4em
 }
