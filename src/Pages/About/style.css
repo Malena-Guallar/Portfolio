@@ -61,3 +61,12 @@
     margin-bottom: 30px;
     font-weight: 300;
 }
+
+.waves {
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    max-width: 200%;
+    right: 180px;
+    margin-bottom: 30px;
+}

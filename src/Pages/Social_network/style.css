@@ -1,0 +1,12 @@
+.wave_container {
+    max-width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.waves_3 {
+    position: absolute;
+    opacity: 40%;
+    z-index: -1;
+    max-width: 20%;
+}
