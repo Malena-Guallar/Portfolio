@@ -7,9 +7,10 @@ export const Home = () => {
     <div className="container">
 
       <div className="home">
-
-        <motion.div className="text-wrapper-1" initial={{ x: -1000, y:-1000}} animate={{x: 0, y:0}} transition={{duration: 0.5}}>
-          FRONT END DEVELOPER ___</motion.div>
+        <div className="text-wrapper-1" >
+          <motion.div initial={{ x: -1000, y:-1000}} animate={{x: 0, y:0}} transition={{duration: 0.5}}>
+            FRONT END DEVELOPER ___</motion.div>
+        </div>
         <br></br>
         <div className="div-wrapper-1">
           <motion.h1 className="text-wrapper-2" initial={{ x: 1000, y: 1000.5 }} animate={{ x: 0, y: 0 }} transition={{ duration: 0.5 }}> 
