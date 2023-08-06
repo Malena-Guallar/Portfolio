@@ -12,13 +12,15 @@ const Project = ({ titre, content, img, link }) => {
                 <p className="project_content">{content}</p>
                 <br/>
                 <br/>
+            </div>
+            <div className="wrapper">
+                <img src={img} className="image_project" />
                 <motion.a 
                     className="motion-link"
                     target="_blank"
                     rel="noopener noreferrer"                    
                     href={link}>repo github</motion.a>
             </div>
-            <img src={img} className="image_project" />
         </div>
     )
 }

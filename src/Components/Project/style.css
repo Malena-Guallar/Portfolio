@@ -14,3 +14,20 @@
     text-align: justify;
     line-height: 1.4em
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.image_project {
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+.motion-link {
+    color: #FF372F;
+    align-self: flex-start;
+    margin-left: 20px;
+}
