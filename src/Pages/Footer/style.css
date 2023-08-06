@@ -1,0 +1,43 @@
+.footer {
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 145%;
+}
+
+.M,
+.latlong {
+}
+
+.footer_infos p,
+.footer_infos img {
+display: inline;
+}
+
+.nums,
+.location,
+.mail {
+    font-family: Cotta;
+}
+
+.name {
+    font-family: Zighead;
+}
+
+.M {
+    max-width: 15%;
+    margin-left: 8px;
+    margin-right: -25px;
+    margin-bottom: -7px;
+}
+
+.latlong {
+    max-width: 25%;
+    margin-right: -50px;
+    bottom: 30px;
+}
+
+.location,
+.mail {
+    font-size: 90%;
+}
