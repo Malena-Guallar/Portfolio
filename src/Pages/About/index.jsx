@@ -20,6 +20,7 @@ export const About = () => {
                     <p>Go check my repositories to learn about all the tools I'm learning.</p>
                     <p>I'm looking for a one-year apprenticeship starting between October 23 and February 24 - let's get in touch !</p>
                     <p> ➜ email me at malena.guallar@gmail.com</p>
+                    <p>➜ download my resume <a href="/public/CV.pdf" download="cv_malena_guallar">here</a></p>
             </div>
 
             <div className="infos_container">

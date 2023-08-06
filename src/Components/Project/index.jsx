@@ -19,7 +19,7 @@ const Project = ({ titre, content, img, link }) => {
                     className="motion-link"
                     target="_blank"
                     rel="noopener noreferrer"                    
-                    href={link}>repo github</motion.a>
+                    href={link}>➜ repo github</motion.a>
             </div>
         </div>
     )
