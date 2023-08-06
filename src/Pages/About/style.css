@@ -74,3 +74,45 @@
 a {
     color: #FF372F;
 }
+
+@media screen and (min-width: 1024px){
+
+    .about {
+        display: inline-flex;
+    }
+    .div-wrapper{
+        width: 60rem;
+        margin-left: 3%;
+    }
+    .title-wrapper {
+        display: flex;
+    }
+    .star {
+        width: 30%;
+        left: -4%;
+        position: relative;
+    }
+    .title {
+        position: relative;
+        margin-left: -6%;
+        margin-top: 5%;
+        font-size: 300%;
+        width: 100%;
+    }
+    .about-text{
+        margin-left: 20%;
+        width: 25rem;
+        margin-top: -5%;
+        font-size: 95%
+    }
+    .about_infos_container {
+        width: 50%;
+        display: inline-flex;
+        border: solid blue 1px;
+        
+    }
+    .waves {
+        position: absolute;
+        opacity: 0%;
+    }
+}
