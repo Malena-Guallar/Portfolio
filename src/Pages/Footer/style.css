@@ -3,10 +3,7 @@
     display: flex;
     align-items: flex-end;
     font-size: 145%;
-}
-
-.M,
-.latlong {
+    width: 110%;
 }
 
 .footer_infos p,
@@ -33,11 +30,44 @@ display: inline;
 
 .latlong {
     max-width: 25%;
-    margin-right: -50px;
+    margin-right: -15px;
     bottom: 30px;
+
 }
 
 .location,
 .mail {
     font-size: 90%;
+}
+
+.location {
+    /* border: solid blue 2px; */
+    margin-left: %;
+    width: %;
+}
+
+@media screen and (min-width: 1024px){
+    .footer {
+        font-size: 450%;
+        display: flex;
+    }
+
+    .M {
+        width: 10%;
+        margin-right: -80px;
+    }
+    .latlong {
+        width: 20%;
+        height: 20%;
+    }
+    .location {
+        height: 0rem
+    }
+
+    .nums,
+    .location,
+    .name,
+    .mail {
+        display: flex;
+    }
 }
