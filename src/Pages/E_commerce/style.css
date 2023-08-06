@@ -11,3 +11,12 @@
     max-width: 20%;
     right: -35px;
 }
+
+.projects {
+    margin-left: 40px;
+    font-family: Canobis;
+    font-size: 700%;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+    opacity: 40%;
+}

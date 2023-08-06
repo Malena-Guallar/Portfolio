@@ -1,14 +1,7 @@
 .project_container {
     z-index: 2;
 }
-.projects {
-    margin-left: 40px;
-    font-family: Canobis;
-    font-size: 400%;
-    letter-spacing: 0.2rem;
-    font-weight: 100;
-    opacity: 40%;
-}
+
 
 .infos_container {
     font-size: 90%;
@@ -33,4 +26,32 @@
     color: #FF372F;
     align-self: flex-start;
     margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .project_container{
+        margin-left: 5%;
+        display: inline-flex;
+        margin-bottom: 10%;
+        height: 40rem;
+    }
+    .project_content {
+        width: 20rem;
+        display: flex;
+        align-content: center;
+    }
+    .image_project{
+        max-width: 80%;
+    }
+    .wrapper {
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    .motion-link {
+        margin-left: 10%;
+    }
+    .project_title {
+        width: 200%;
+        font-size: 300%
+    }
 }

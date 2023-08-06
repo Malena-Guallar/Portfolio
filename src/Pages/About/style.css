@@ -80,7 +80,7 @@ a {
     .about {
         display: inline-flex;
     }
-    .div-wrapper{
+    .div-wrapper {
         width: 60rem;
         margin-left: 3%;
     }
@@ -108,7 +108,6 @@ a {
     .about_infos_container {
         width: 50%;
         display: inline-flex;
-        border: solid blue 1px;
         
     }
     .waves {

@@ -6,6 +6,7 @@ export const E_commerce = () => {
 
     return (
         <>
+        <h1 className="projects">Projects</h1>
         <Project
             titre={"E-Commerce"}
             content={
