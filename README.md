@@ -24,6 +24,6 @@ I designed it on Figma and am now developping the front-end part.
 
 ![Capture d’écran 2023-08-07 à 09 28 29](https://github.com/Malena-Guallar/_Portfolio/assets/123973678/ab699d2b-7727-4e2a-b457-eb723866f078)
 
-&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;   ![Capture d’écran 2023-08-07 à 09 29 26](https://github.com/Malena-Guallar/_Portfolio/assets/123973678/84516acd-e575-40a4-8350-a90119118cc9)
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;   ![Capture d’écran 2023-08-07 à 09 29 26](https://github.com/Malena-Guallar/_Portfolio/assets/123973678/84516acd-e575-40a4-8350-a90119118cc9)
 
 
