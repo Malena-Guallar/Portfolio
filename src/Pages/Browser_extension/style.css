@@ -11,3 +11,9 @@
     max-width: 20%;
     right: -35px;
 }
+
+@media screen and (min-width: 1024px) {
+    .waves_4 {
+        opacity: 0%
+    }
+}

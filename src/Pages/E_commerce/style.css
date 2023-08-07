@@ -20,3 +20,11 @@
     font-weight: 100;
     opacity: 40%;
 }
+
+@media screen and (min-width: 1024px) {
+    .waves_1 {
+        opacity: 0%;
+        left: 80%;
+        bottom: 10%;
+    }
+}

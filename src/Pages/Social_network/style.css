@@ -10,3 +10,9 @@
     z-index: -1;
     max-width: 20%;
 }
+
+@media screen and (min-width: 1024px) {
+    .waves_3 {
+        opacity: 0%
+    }
+}
