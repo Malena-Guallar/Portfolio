@@ -2,7 +2,7 @@
 
 ➜ &ensp; https://malena-guallar.github.io/_Portfolio/
 
-Work in progress - web version only
+Work in progress :cyclone: web and mobile version
 <br>
 <br>
 
@@ -22,6 +22,8 @@ I designed it on Figma and am now developping the front-end part.
 
 ### Preview
 
-![Capture d’écran 2023-07-19 à 11 21 43](https://github.com/Malena-Guallar/_Portfolio/assets/123973678/b9ad5c29-bc7e-4e63-9a72-4ef40a1cc6f6)
+![Capture d’écran 2023-08-07 à 09 28 29](https://github.com/Malena-Guallar/_Portfolio/assets/123973678/ab699d2b-7727-4e2a-b457-eb723866f078)
+
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;   ![Capture d’écran 2023-08-07 à 09 29 26](https://github.com/Malena-Guallar/_Portfolio/assets/123973678/84516acd-e575-40a4-8350-a90119118cc9)
 
 
