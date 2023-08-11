@@ -12,19 +12,12 @@
     right: -35px;
 }
 
-.projects {
-    margin-left: 40px;
-    font-family: Canobis;
-    font-size: 500%;
-    letter-spacing: 0.2rem;
-    font-weight: 100;
-    opacity: 40%;
-}
+
 
 @media screen and (min-width: 1024px) {
     .waves_1 {
-        opacity: 0%;
-        left: 80%;
-        bottom: 10%;
+        opacity: 40%;
+        left: 5%;
+        top: 300%
     }
 }

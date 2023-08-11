@@ -118,6 +118,9 @@ a {
     }
     .waves {
         position: absolute;
-        opacity: 0%;
+        opacity: 50%;
+        max-width: 100%;
+        left: 20%;
+        top: 180%
     }
 }

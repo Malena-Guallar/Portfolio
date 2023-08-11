@@ -5,11 +5,11 @@ import { Browser_extension } from "../Browser_extension/index.jsx";
 import { Social_network } from "../Social_network/index.jsx";
 import { E_commerce } from "../E_commerce/index.jsx";
 import { Dataviz } from "../Dataviz/index.jsx";
-import { motion, useAnimation } from "framer-motion";
 import { Footer } from "../Footer";
+import { Micro_blogging } from "../Micro_blogging";
 import "./style.css"
 
-const pages = [Home, About, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
+const pages = [Home, About, Micro_blogging, E_commerce, Social_network, Browser_extension, Dataviz, Footer];
 
 export const Global = () => {
     
