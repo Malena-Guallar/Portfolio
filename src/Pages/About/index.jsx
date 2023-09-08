@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "../About/style.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import TextAnimation from "../../kreativetext";
+
 
 const pageVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 3, type: "spring" } },
@@ -11,6 +13,18 @@ const pageVariants = {
 export const About = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.5 });
+
+
+ new TextAnimation({
+    selector: ".title",
+    effect: "shuffle",
+    speed: 50,
+    duration: 0.5,
+    trigger: 0,
+    onLoad: true,
+    hover: false
+})
+
 
   useEffect(() => {
     if (inView) {
@@ -27,7 +41,7 @@ export const About = () => {
         <div className="title-wrapper">
           {/* <img className="star" alt="Image" src="./images/image1.svg" /> */}
           <motion.h1
-            className="title"
+            class="title"
             variants={pageVariants}
             initial="hidden"
             ref={ref}
