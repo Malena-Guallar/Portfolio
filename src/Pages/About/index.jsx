@@ -3,7 +3,7 @@ import "../About/style.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TextAnimation from "../../kreativetext";
-
+import AnimationScroll from "../../kreativescroll";
 
 const pageVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 3, type: "spring" } },
@@ -15,15 +15,17 @@ export const About = () => {
   const [ref, inView] = useInView({ threshold: 0.5 });
 
 
- new TextAnimation({
-    selector: ".title",
-    effect: "shuffle",
-    speed: 50,
-    duration: 0.5,
+
+  new AnimationScroll({
+    selector: ".div-wrapper-about-page",
     trigger: 0,
-    onLoad: true,
-    hover: false
-})
+    transform: "20xvw 0.9s",
+    easing: "ease-in-out",
+    duration: 2,
+    onLoad: false,
+    scrollSpeed: 0.7,
+    pauseOnScroll: true
+});
 
 
   useEffect(() => {
@@ -42,10 +44,10 @@ export const About = () => {
           {/* <img className="star" alt="Image" src="./images/image1.svg" /> */}
           <motion.h1
             class="title"
-            variants={pageVariants}
-            initial="hidden"
-            ref={ref}
-            animate={controls}
+            // variants={pageVariants}
+            // initial="hidden"
+            // ref={ref}
+            // animate={controls}
           >
             about
           </motion.h1>
@@ -53,10 +55,10 @@ export const About = () => {
 
         <motion.div
           className="about-text"
-          variants={pageVariants}
-          initial="hidden"
-          ref={ref}
-          animate={controls}
+          // variants={pageVariants}
+          // initial="hidden"
+          // ref={ref}
+          // animate={controls}
         >
           <p className="text-wrapper-1-about-page">
             I'm looking for a one-year apprenticeship starting between october

@@ -47,7 +47,7 @@
 
   .div-wrapper-about-page {
     position: relative;
-    left: 20%;
+    transform: translate(50%, -50%);
   }
 
   .title-wrapper {
