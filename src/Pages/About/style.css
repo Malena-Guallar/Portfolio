@@ -1,34 +1,87 @@
 .about {
-    margin-left: 10px;
+  margin-left: 10px;
+  height: 100vh;
+  display: flex;
+  margin-top: 10%;
 }
 
 .div-wrapper-about-page {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-    font-family: Cotta;
-    font-size: 80px;
-    font-weight: 100;
+  font-family: Cotta;
+  font-size: 80px;
+  font-weight: 100;
 }
 
 .about-text {
-    letter-spacing: 0.05em;
-    font-size: 13px;
-    width: 80%;
-    text-align: justify;
-    text-justify: auto;
-    line-height: 1.5em;
-    font-family: "Darker Grotesque";
-    top: 10%;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+  width: 80%;
+  text-align: justify;
+  text-justify: auto;
+  line-height: 1.5em;
+  font-family: "Darker Grotesque";
+  top: 10%;
 }
 
 .text-wrapper-1-about-page {
-    font-size: 120%
+  font-size: 130%;
 }
 
 .text-wrapper-2-about-page {
-    font-size: 110%
+  font-size: 110%;
+}
+
+.text-wrapper-3-about-page {
+  font-size: 120%;
+}
+
+@media screen and (min-width: 1000px) {
+  .about {
+    margin-top: 0;
+  }
+
+  .div-wrapper-about-page {
+    position: relative;
+    left: 20%;
+  }
+
+  .title-wrapper {
+    left: 10px;
+  }
+
+  .title {
+    left: 10px;
+    font-size: 100px;
+  }
+
+  .about-text {
+    /* border: solid blue 2px; */
+    width: 60%;
+  }
+
+  .text-wrapper-1-about-page {
+    font-size: 180%;
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 40%;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+
+  .text-wrapper-2-about-page {
+    font-size: 150%;
+    font-weight: 400;
+    line-height: 2em;
+    width: 60%;
+  }
+
+  .text-wrapper-3-about-page {
+    font-size: 160%;
+  }
 }

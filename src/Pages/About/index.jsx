@@ -3,26 +3,21 @@ import "../About/style.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-
 const pageVariants = {
-  visible: { opacity: 1, transition: { duration: 2 } },
-  hidden: { opacity: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 3, type: "spring" } },
+  hidden: { opacity: 0, y: 10 },
 };
 
-
 export const About = () => {
-
-
   const controls = useAnimation();
-  const [ref, inView] = useInView({threshold: 0.5});
+  const [ref, inView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
-        controls.start("visible");
-        console.log('in view')
-    }
-    else if (!inView){
-        controls.start("hidden");
+      controls.start("visible");
+      console.log("in view");
+    } else if (!inView) {
+      controls.start("hidden");
     }
   }, [controls, inView]);
 
@@ -41,7 +36,14 @@ export const About = () => {
             about
           </motion.h1>
         </div>
-        <div className="about-text">
+
+        <motion.div
+          className="about-text"
+          variants={pageVariants}
+          initial="hidden"
+          ref={ref}
+          animate={controls}
+        >
           <p className="text-wrapper-1-about-page">
             I'm looking for a one-year apprenticeship starting between october
             23 and february 24 - let's get in touch !
@@ -51,18 +53,18 @@ export const About = () => {
             I'm Malena, developer apprentice at Ada Tech School since January
             2023. I used to be a cheffe in a restaurant, conceiving and
             designing courses as well as conceiving and designing apps is
-            something I am passionate about. I develop with Javascript and like
-            to use tools such as React, Next, Jest. I love tests and cleancode.
-            Go check my repositories to learn about all the tools I'm learning.
-            download my resume here
+            something I am passionate about. I develop with <b>Javascript</b>{" "}
+            and like to use tools such as <b>React, NextJs, Jest</b>. I love{" "}
+            <b>tests and cleancode</b>. Go check my repositories to learn about
+            all the tools I'm learning.
           </p>
-          <p>
-            ➜ download my resume &nbsp;
+          <p className="text-wrapper-3-about-page">
+            → &nbsp; download my resume &thinsp;
             <a href="/public/CV.pdf" download="cv_malena_guallar">
               here
             </a>
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="about_infos_container">
