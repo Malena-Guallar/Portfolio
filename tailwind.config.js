@@ -8,6 +8,7 @@ export default {
       'Canobis': 'Canobis',
       'Cotta': 'Cotta',
       'Zighead': 'Zighead',
+      'Darker Grotesque': 'Darker Grotesque',
     }
   },
   plugins: [],

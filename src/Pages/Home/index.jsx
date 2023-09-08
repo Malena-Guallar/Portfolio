@@ -6,13 +6,13 @@ export const Home = () => {
   return (
     <div className="container">
       <div className="home">
-        {/* <motion.img
+        <motion.img
           className="image"
           alt="Image"
           src="./images/image1.svg"
           animate={{ rotate: [0, 90, 180, 270, 360] }}
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-        /> */}
+        />
 
         <motion.div
           className="div-wrapper-3"
@@ -61,6 +61,11 @@ export const Home = () => {
             all rights reserved © 2023 Malena Guallar
           </motion.p>
         </motion.div>
+
+        {/* <div className="seperation-line-div">
+          <p className="seperation-line">_________</p>
+
+        </div> */}
       </div>
     </div>
   );
