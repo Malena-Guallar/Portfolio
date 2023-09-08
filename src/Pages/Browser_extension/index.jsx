@@ -16,7 +16,6 @@ export const Browser_extension = () => {
                 </div>}
             img={"./images/browserextension.png"}
             link={"https://github.com/Malena-Guallar/Browser_extension"}/>
-            <img className="waves_4" src="./images/waves2.png"></img>
         </>
     )
 }

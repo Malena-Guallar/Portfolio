@@ -1,69 +1,109 @@
 .container {
-    display: flex;
-    /* text-align: center; */
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+  font-family: Montserrat;
 }
 
-.home {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    width: 35vh;
-    align-items: center;
-    text-align: center;  
+.image {
+  width: 100px;
 }
 
 .div-wrapper-1 {
-    position: absolute;
-    align-self: center;
+  text-align: left;
+  margin-left: 20px;
 }
+
+.text-wrapper-1 {
+  font-weight: 600;
+}
+
 .div-wrapper-2 {
-    position: absolute; 
-    bottom: 5rem;
-    width: 15rem;
-    font-size: 90%;
+  position: absolute;
+  text-align: center;
+  width: 94%;
+  bottom: 0;
+  font-size: 80%;
 }
 
-.text-wrapper-2 {
-    font-family: Canobis;
-    font-size: 5rem;
-    letter-spacing: 0.3rem;
-    font-weight: 100;
+.div-wrapper-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 80%;
+}
+.text-wrapper-3 {
+  font-size: 80px;
+  font-family: "Cotta";
+  font-weight: 100;
 }
 
-@media screen and (min-width: 1024px){
-    html {
-        background-image: url("/public/images/Home.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .home {
-        max-height: 100vh;
-        width: 100%;
-        display: flex;
-    }
-    .container {
-        display: flex;
-    }
-    .text-wrapper-1{
-        display: flex;
-        width: 50%;
-        margin-top: 5%;
-    }
-    .div-wrapper-1 {
-        bottom: 25%;
-    }
-    .div-wrapper-2 {
-        display: flex;
-        width: 50%;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .text-wrapper-5,
-    .text-wrapper-4,
-    .text-wrapper-6 {
-        width: 30%;
-    }
+.text-wrapper-4 {
+  font-size: 40px;
+  font-family: "Cotta";
+  font-weight: 100;
+}
+
+.text-wrapper-5 {
+  font-family: "Cotta"
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .text-wrapper-1 {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    font-size: 120%;
+    font-weight: 700;
+  }
+
+  .text-wrapper-2 {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+  }
+
+  .div-wrapper-2 {
+    left: 30px;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+  }
+
+  .div-wrapper-4 {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-between;
+  }
+  .div-wrapper-1 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    text-align: left;
+    margin-left: 15%;
+    width: 30%;
+  }
+
+  .text-wrapper-3 {
+    font-size: 100px;
+  }
+
+  .text-wrapper-4 {
+    font-size: 40px;
+  }
+
+  .text-wrapper-5 {
+    margin-right: 22px;
+  }
 }

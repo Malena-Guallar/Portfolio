@@ -17,7 +17,6 @@ export const Social_network = () => {
                 </div>}
             img={"./images/afterlife.png"}
             link={"https://github.com/Malena-Guallar/Social_network"}/>
-            <img className="waves_3" src="./images/waves3.png" />
         </>
     )
 }

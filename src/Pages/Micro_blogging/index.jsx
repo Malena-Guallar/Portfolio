@@ -17,9 +17,7 @@ export const Micro_blogging = () => {
                 </div>}
             img={"./images/micro_blogging.png"}
             link={"https://github.com/Malena-Guallar/Micro_blogging"}/>
-            {/* <div className="wave_container">
-                <img className="waves_1" src="./images/waves2.png"/>
-            </div> */}
+
         </>
     )
 }

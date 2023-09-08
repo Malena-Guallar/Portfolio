@@ -15,7 +15,7 @@ const Project = ({ titre, content, img, link }) => {
                 </div>
             </div>
             <div className="wrapper">
-                <img src={img} className="image_project" />
+                {/* <img src={img} className="image_project" /> */}
                 <motion.a 
                     className="motion-link"
                     target="_blank"

@@ -16,9 +16,7 @@ export const E_commerce = () => {
                 </div>}
             img={"./images/browserextension.png"}
             link={"https://github.com/Malena-Guallar/Browser_extension"}/>
-            <div className="wave_container">
-                <img className="waves_1" src="./images/waves2.png"/>
-            </div>
+
         </>
     )
 }
