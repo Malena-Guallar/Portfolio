@@ -5,37 +5,26 @@ import { useInView } from "react-intersection-observer";
 import TextAnimation from "../../kreativetext";
 import AnimationScroll from "../../kreativescroll";
 
-const pageVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 3, type: "spring" } },
-  hidden: { opacity: 0, y: 10 },
-};
+// const pageVariants = {
+//   visible: { opacity: 1, y: 0, transition: { duration: 3, type: "spring" } },
+//   hidden: { opacity: 0, y: 10 },
+// };
 
 export const About = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 });
-
-
-
-  new AnimationScroll({
-    selector: ".div-wrapper-about-page",
-    trigger: 0,
-    transform: "20xvw 0.9s",
-    easing: "ease-in-out",
-    duration: 2,
-    onLoad: false,
-    scrollSpeed: 0.7,
-    pauseOnScroll: true
-});
-
+  // const controls = useAnimation();
+  const [ref, inView] = useInView({ delay: 100 });
 
   useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-      console.log("in view");
-    } else if (!inView) {
-      controls.start("hidden");
-    }
-  }, [controls, inView]);
+    new TextAnimation({
+      selector: [".title", ".text-wrapper-1-about-page", ".text-wrapper-2-about-page"],
+      effect: "shuffle",
+      speed: 50,
+      duration: 0.5,
+      trigger: 0,
+      onLoad: true,
+      hover: false,
+    });
+  }, [inView]);
 
   return (
     <div className="about">
@@ -46,7 +35,6 @@ export const About = () => {
             class="title"
             // variants={pageVariants}
             // initial="hidden"
-            // ref={ref}
             // animate={controls}
           >
             about
@@ -69,12 +57,12 @@ export const About = () => {
             I'm Malena, developer apprentice at Ada Tech School since January
             2023. I used to be a cheffe in a restaurant, conceiving and
             designing courses as well as conceiving and designing apps is
-            something I am passionate about. I develop with <b>Javascript</b>{" "}
-            and like to use tools such as <b>React, NextJs, Jest</b>. I love{" "}
+            something I am passionate about. I develop with <b>Javascript</b>
+            and like to use tools such as <b>React, NextJs, Jest</b>. I love
             <b>tests and cleancode</b>. Go check my repositories to learn about
             all the tools I'm learning.
           </p>
-          <p className="text-wrapper-3-about-page">
+          <p className="text-wrapper-3-about-page" ref={ref}>
             → &nbsp; download my resume &thinsp;
             <a href="/public/CV.pdf" download="cv_malena_guallar">
               here

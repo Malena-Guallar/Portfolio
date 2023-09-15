@@ -15,6 +15,7 @@
   font-family: Cotta;
   font-size: 80px;
   font-weight: 100;
+  transform: translate;
 }
 
 .about-text {
@@ -43,11 +44,13 @@
 @media screen and (min-width: 1000px) {
   .about {
     margin-top: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .div-wrapper-about-page {
-    position: relative;
-    transform: translate(50%, -50%);
+    position: absolute;
+    width: 50%;
   }
 
   .title-wrapper {
@@ -72,13 +75,14 @@
     width: 40%;
     font-weight: 300;
     line-height: 1.2em;
+    width: 60%;
   }
 
   .text-wrapper-2-about-page {
     font-size: 150%;
     font-weight: 400;
     line-height: 2em;
-    width: 60%;
+    width: 80%;
   }
 
   .text-wrapper-3-about-page {
