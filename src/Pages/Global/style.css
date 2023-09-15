@@ -1,8 +1,16 @@
-html {
-
-}
+:root {
+    --text-color: #FF372F; 
+    --background-color: #fff; 
+  }
+  
+  :root[data-theme='dark'] {
+    --text-color: #FFB6D0; 
+    --background-color: #301027; 
+  }
 
 .app_container {
     color: #FF372F;
     min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }

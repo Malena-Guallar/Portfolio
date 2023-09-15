@@ -1,10 +1,14 @@
 import React from "react";
 import "/src/Pages/Home/style.css";
 import { motion } from "framer-motion";
+import { useTheme } from "../../ThemeProvider";
 
 export const Home = () => {
+
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div className="container">
+    <div className={`container ${theme}`}>
       <div className="home">
         <motion.img
           className="image"
@@ -21,7 +25,9 @@ export const Home = () => {
           transition={{ duration: 1 }}
         >
           <p className="text-wrapper-1">FRONT END DEVELOPER</p>
-          <p className="text-wrapper-2">DARK MODE</p>
+          <button className="text-wrapper-2" onClick={toggleTheme}>
+          {theme === "light" ? "DARK MODE" : "LIGHT MODE"}
+          </button>
         </motion.div>
 
         <div className="div-wrapper-1">

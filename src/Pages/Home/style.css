@@ -1,9 +1,20 @@
+:root {
+  --text-color: #FF372F; 
+  --background-color: #fff; 
+}
+
+:root[data-theme='dark'] {
+  --text-color: #FFB6D0; 
+  --background-color: #301027; 
+}
+
 .container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   height: 100vh;
   font-family: "Darker Grotesque";
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .image {

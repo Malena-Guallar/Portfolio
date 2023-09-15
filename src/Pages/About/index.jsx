@@ -1,22 +1,20 @@
 import React, { useEffect } from "react";
 import "../About/style.css";
-import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TextAnimation from "../../kreativetext";
-import AnimationScroll from "../../kreativescroll";
-
-// const pageVariants = {
-//   visible: { opacity: 1, y: 0, transition: { duration: 3, type: "spring" } },
-//   hidden: { opacity: 0, y: 10 },
-// };
+import { useTheme } from "../../ThemeProvider";
 
 export const About = () => {
-  // const controls = useAnimation();
+  const { theme } = useTheme();
   const [ref, inView] = useInView({ delay: 100 });
 
   useEffect(() => {
     new TextAnimation({
-      selector: [".title", ".text-wrapper-1-about-page", ".text-wrapper-2-about-page"],
+      selector: [
+        ".title",
+        ".text-wrapper-1-about-page",
+        ".text-wrapper-2-about-page",
+      ],
       effect: "shuffle",
       speed: 50,
       duration: 0.5,
@@ -27,21 +25,14 @@ export const About = () => {
   }, [inView]);
 
   return (
-    <div className="about">
+    <div className={`about ${theme}`}>
       <div className="div-wrapper-about-page">
         <div className="title-wrapper">
           {/* <img className="star" alt="Image" src="./images/image1.svg" /> */}
-          <motion.h1
-            class="title"
-            // variants={pageVariants}
-            // initial="hidden"
-            // animate={controls}
-          >
-            about
-          </motion.h1>
+          <h1 class="title">about</h1>
         </div>
 
-        <motion.div
+        <div
           className="about-text"
           // variants={pageVariants}
           // initial="hidden"
@@ -68,7 +59,7 @@ export const About = () => {
               here
             </a>
           </p>
-        </motion.div>
+        </div>
       </div>
 
       <div className="about_infos_container">
