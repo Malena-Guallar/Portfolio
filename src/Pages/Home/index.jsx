@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useTheme } from "../../ThemeProvider";
 
 export const Home = () => {
-
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -25,9 +24,16 @@ export const Home = () => {
           transition={{ duration: 1 }}
         >
           <p className="text-wrapper-1">FRONT END DEVELOPER</p>
-          <button className="text-wrapper-2" onClick={toggleTheme}>
-          {theme === "light" ? "DARK MODE" : "LIGHT MODE"}
-          </button>
+          <motion.button
+            className="text-wrapper-2"
+            onClick={toggleTheme}
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+          >
+            {theme === "light" ? "DARK MODE" : "LIGHT MODE"}
+          </motion.button>
         </motion.div>
 
         <div className="div-wrapper-1">

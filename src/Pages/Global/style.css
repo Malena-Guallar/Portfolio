@@ -8,6 +8,12 @@
     --background-color: #301027; 
   }
 
+html {
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+}
+
 .app_container {
     color: #FF372F;
     min-height: 100vh;

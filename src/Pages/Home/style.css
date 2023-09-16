@@ -68,6 +68,15 @@
   font-family: "Cotta";
 }
 
+.text-wrapper-2 {
+  border: none;
+  font-family: "Darker Grotesque";
+  background: none;
+  font-size: 100%;
+  color: var(--text-color);
+
+}
+
 
 @media screen and (min-width: 1000px) {
   .container {
@@ -86,8 +95,9 @@
 
   .text-wrapper-2 {
     position: fixed;
-    top: 10px;
+    top: 25px;
     right: 30px;
+    font-size: 120%
   }
 
   .div-wrapper-2 {
