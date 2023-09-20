@@ -32,13 +32,7 @@ export const About = () => {
           <h1 class="title">about</h1>
         </div>
 
-        <div
-          className="about-text"
-          // variants={pageVariants}
-          // initial="hidden"
-          // ref={ref}
-          // animate={controls}
-        >
+        <div className="about-text">
           <p className="text-wrapper-1-about-page">
             I'm looking for a one-year apprenticeship starting between october
             23 and february 24 - let's get in touch !
@@ -48,9 +42,9 @@ export const About = () => {
             I'm Malena, developer apprentice at Ada Tech School since January
             2023. I used to be a cheffe in a restaurant, conceiving and
             designing courses as well as conceiving and designing apps is
-            something I am passionate about. I develop with <b>Javascript</b>
-            and like to use tools such as <b>React, NextJs, Jest</b>. I love
-            <b>tests and cleancode</b>. Go check my repositories to learn about
+            something I am passionate about. I develop with Javascript
+            and like to use tools such as React, NextJs, Jest. I love
+            tests and cleancode. Go check my repositories to learn about
             all the tools I'm learning.
           </p>
           <p className="text-wrapper-3-about-page" ref={ref}>

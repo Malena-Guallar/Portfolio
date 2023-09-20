@@ -1,22 +1,50 @@
 :root {
-    --text-color: #FF372F; 
-    --background-color: #fff; 
-  }
-  
-  :root[data-theme='dark'] {
-    --text-color: #FFB6D0; 
-    --background-color: #301027; 
-  }
+  --text-color: #ff372f;
+  --background-color: #fff;
+}
+
+:root[data-theme="dark"] {
+  --text-color: #ffb6d0;
+  --background-color: #301027;
+}
 
 html {
-    color: var(--text-color);
-    background-color: var(--background-color);
-
+  color: var(--text-color);
+  background-color: var(--background-color);
+  /* overflow: hidden; */
 }
 
 .app_container {
-    color: #FF372F;
-    min-height: 100vh;
-    color: var(--text-color);
-    background-color: var(--background-color);
+  color: #ff372f;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+@media screen and (min-width: 1000px) {
+
+  .pages_container {
+    /* display: flex; */
+    position: relative;
+    height: 500vh;
+    width: 100vh;
+    border: solid pink 2px;
+  }
+
+  .pages_wrapper {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: screen;
+    /* overflow: hidden; */
+  }
+
+  .page {
+    /* flex: 1; */
+    min-width: 100vh;
+    height: 50vh;
+    /* width: 200%; */
+    margin: 30px;
+    border: solid orange 2px;
+  }
 }

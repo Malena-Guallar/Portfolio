@@ -1,6 +1,6 @@
 .project_container {
     z-index: 2;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 
 .infos_container {
@@ -31,7 +31,8 @@
 @media screen and (min-width: 1024px) {
     .project_container{
         margin-left: 5%;
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
         margin-bottom: 10%;
         height: 30rem;
     }
@@ -41,7 +42,7 @@
         align-content: center;
     }
     .image_project{
-        max-width: 80%;
+        max-width: 100%;
     }
     .wrapper {
         margin-top: 2%;

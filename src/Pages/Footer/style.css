@@ -1,73 +1,72 @@
 .footer {
-    height: 400px;
-    display: flex;
-    align-items: flex-end;
-    font-size: 145%;
-    width: 110%;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 145%;
+  width: 110%;
 }
 
 .footer_infos p,
 .footer_infos img {
-display: inline;
+  display: inline;
 }
 
 .nums,
 .location,
 .mail {
-    font-family: Cotta;
+  font-family: Cotta;
 }
 
 .name {
-    font-family: Zighead;
+  font-family: Zighead;
 }
 
 .M {
-    max-width: 15%;
-    margin-left: 8px;
-    margin-right: -25px;
-    margin-bottom: -7px;
+  max-width: 15%;
+  margin-left: 8px;
+  margin-right: -25px;
+  margin-bottom: -7px;
 }
 
 .latlong {
-    max-width: 25%;
-    margin-right: -15px;
-    bottom: 30px;
-
+  max-width: 25%;
+  margin-right: -15px;
+  bottom: 30px;
 }
 
 .location,
 .mail {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 .location {
-    /* border: solid blue 2px; */
-    margin-left: %;
-    width: %;
+  /* border: solid blue 2px; */
+  margin-left: %;
+  width: %;
 }
 
-@media screen and (min-width: 1024px){
-    .footer {
-        font-size: 450%;
-        display: flex;
-    }
+@media screen and (min-width: 1024px) {
+  .footer {
+    font-size: 450%;
+    display: flex;
+  }
 
-    .M {
-        width: 10%;
-        margin-right: -80px;
-    }
-    .latlong {
-        width: 20%;
-        height: 20%;
-    }
-    .location {
-        height: 0rem
-    }
+  .M {
+    width: 10%;
+    margin-right: -80px;
+  }
+  .latlong {
+    width: 20%;
+    height: 20%;
+  }
+  .location {
+    height: 0rem;
+  }
 
-    .nums,
-    .location,
-    .name,
-    .mail {
-        display: flex;
-    }
+  .nums,
+  .location,
+  .name,
+  .mail {
+    display: flex;
+  }
 }
