@@ -6,7 +6,6 @@ export const Micro_blogging = () => {
 
     return (
         <>
-        <h1 className="projects">Projects</h1>
         <Project
             titre={"Micro blogging"}
             content={

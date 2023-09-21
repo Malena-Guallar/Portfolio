@@ -11,7 +11,7 @@
 html {
   color: var(--text-color);
   background-color: var(--background-color);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .app_container {
@@ -21,14 +21,19 @@ html {
   background-color: var(--background-color);
 }
 
+.projects {
+  font-family: "Cotta";
+  font-weight: 100;
+}
+
 @media screen and (min-width: 1000px) {
+  .projects {
+  }
 
   .pages_container {
-    /* display: flex; */
     position: relative;
     height: 300vh;
     width: 100vh;
-    border: solid pink 2px;
   }
 
   .pages_wrapper {
@@ -40,11 +45,9 @@ html {
   }
 
   .page {
-    /* flex: 1; */
-    min-width: 100vh;
+    min-width: 150vh;
     height: 50vh;
-    /* width: 200%; */
     margin: 30px;
-    border: solid orange 2px;
+    margin-top: 200px;
   }
 }

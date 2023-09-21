@@ -5,7 +5,6 @@ export const Footer = () => {
 
     return (
         <div className="footer">
-            {/* <p className="infos">this app was designed and developed by myself using React with Vite © Malena Guallar 2023</p> */}
             <div className="footer_infos">
                 <p className="nums">❊ 2711</p>
                 <img className="M" src="./images/M.png" />

@@ -1,11 +1,11 @@
 :root {
-  --text-color: #FF372F; 
-  --background-color: #fff; 
+  --text-color: #ff372f;
+  --background-color: #fff;
 }
 
-:root[data-theme='dark'] {
-  --text-color: #FFB6D0; 
-  --background-color: #301027; 
+:root[data-theme="dark"] {
+  --text-color: #ffb6d0;
+  --background-color: #301027;
 }
 
 .container {
@@ -50,7 +50,7 @@
 }
 
 .div-wrapper-4 {
-  font-size: 130%
+  font-size: 130%;
 }
 .text-wrapper-3 {
   font-size: 80px;
@@ -74,9 +74,13 @@
   background: none;
   font-size: 100%;
   color: var(--text-color);
-
 }
 
+.div-wrapper-7 {
+  z-index: 10;
+  color: var(--text-color);
+  padding: 10px;
+}
 
 @media screen and (min-width: 1000px) {
   .container {
@@ -97,7 +101,7 @@
     position: fixed;
     top: 25px;
     right: 30px;
-    font-size: 120%
+    font-size: 120%;
   }
 
   .div-wrapper-2 {

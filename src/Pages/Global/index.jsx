@@ -35,10 +35,11 @@ const HorizontalScroll = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-500%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-600%"]);
 
   return (
     <>
+      <h1 className="projects">Projects</h1>
       <div className="pages_container" ref={targetRef}>
         <motion.div style={{ x }} className="pages_wrapper">
           {pages.map((Page, index) => (

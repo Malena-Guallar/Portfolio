@@ -66,18 +66,14 @@ export const Home = () => {
               malena.guallar@gmail.com
             </motion.p>
 
-            <p className="text-wrapper-7">GITHUB &emsp; LINKEDIN</p>
+            <a className="div-wrapper-7" target="_blank" rel="noopener noreferrer" href="https://github.com/Malena-Guallar">github</a>
+            <a className="div-wrapper-7" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/malenaguallar/">linkedin</a>
           </div>
 
           <motion.p className="text-wrapper-5">
             all rights reserved © 2023 Malena Guallar
           </motion.p>
         </motion.div>
-
-        {/* <div className="seperation-line-div">
-          <p className="seperation-line">_________</p>
-
-        </div> */}
       </div>
     </div>
   );

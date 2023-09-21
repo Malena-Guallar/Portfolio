@@ -49,7 +49,7 @@ export const About = () => {
           </p>
           <p className="text-wrapper-3-about-page" ref={ref}>
             → &nbsp; download my resume &thinsp;
-            <a href="/public/CV.pdf" download="cv_malena_guallar">
+            <a className="email_download" href="/public/CV.pdf" download="cv_malena_guallar">
               here
             </a>
           </p>
