@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Home } from "../Home/index";
 import { About } from "../About/index.jsx";
 import { Browser_extension } from "../Browser_extension/index.jsx";
@@ -19,13 +19,52 @@ const pages = [
 ];
 
 export const Global = () => {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 768) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    // return () => {
+    //   window.removeEventListener("resize", handleResize);
+    // };
+  }, []);
+
   return (
     <div className="app_container">
       <Home />
       <About />
-      <HorizontalScroll />
+      {mobile ? <NormalScroll /> : <HorizontalScroll />}
       <Footer />
     </div>
+  );
+};
+
+const NormalScroll = () => {
+  const targetRef = useRef(null);
+
+  return (
+    <>
+      <h1 className="projects">projects</h1>
+      <div className="pages_container" ref={targetRef}>
+        <div className="pages_wrapper">
+          {pages.map((Page, index) => (
+            <div className="page" key={index}>
+              <Page />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
@@ -39,8 +78,8 @@ const HorizontalScroll = () => {
 
   return (
     <>
-      <h1 className="projects">Projects</h1>
       <div className="pages_container" ref={targetRef}>
+      <h1 className="projects">projects</h1>
         <motion.div style={{ x }} className="pages_wrapper">
           {pages.map((Page, index) => (
             <div className="page" key={index}>
