@@ -8,14 +8,13 @@ import { Dataviz } from "../Dataviz/index.jsx";
 import { Footer } from "../Footer";
 import { Micro_blogging } from "../Micro_blogging";
 import { motion, useTransform, useScroll } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import TextAnimation from "../../kreativetext";
 import "./style.css";
 
 const pages = [
   Micro_blogging,
   E_commerce,
-  Social_network,
-  Browser_extension,
-  Dataviz,
 ];
 
 export const Global = () => {
@@ -33,10 +32,6 @@ export const Global = () => {
     handleResize();
 
     window.addEventListener("resize", handleResize);
-
-    // return () => {
-    //   window.removeEventListener("resize", handleResize);
-    // };
   }, []);
 
   return (
@@ -69,17 +64,34 @@ const NormalScroll = () => {
 };
 
 const HorizontalScroll = () => {
+  const [ref, inView] = useInView({ });
+
+  useEffect(() => {
+    new TextAnimation({
+      selector: ".projects",
+      effect: "flip",
+      speed: 100,
+      duration: 1,
+      trigger: 0,
+      invisibleOutsideTrigger: true,
+      onLoad: true,
+      hover: false,
+    });
+  }, [inView]);
+
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-600%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["40%", "-130%"]);
 
   return (
     <>
       <div className="pages_container" ref={targetRef}>
-      <h1 className="projects">projects</h1>
+        <h1 className="projects" ref={ref}>
+          projects
+        </h1>
         <motion.div style={{ x }} className="pages_wrapper">
           {pages.map((Page, index) => (
             <div className="page" key={index}>

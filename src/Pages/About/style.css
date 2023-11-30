@@ -93,3 +93,9 @@
     font-size: 160%;
   }
 }
+
+@media screen and (max-width: 1000px){
+  .about{
+    height: 70vh
+  }
+}

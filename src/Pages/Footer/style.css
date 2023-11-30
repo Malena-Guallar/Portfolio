@@ -1,5 +1,5 @@
 .footer {
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: flex-end;
   font-size: 145%;
@@ -40,7 +40,6 @@
 }
 
 .location {
-  /* border: solid blue 2px; */
   margin-left: %;
   width: %;
 }
