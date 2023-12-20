@@ -12,7 +12,7 @@ html {
   color: var(--text-color);
   background-color: var(--background-color);
   overflow: hidden;
-  overflow-Y: scroll;
+  overflow-y: scroll;
 }
 
 .app_container {
