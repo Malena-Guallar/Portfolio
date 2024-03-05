@@ -44,7 +44,6 @@ html {
     position: sticky;
     top: 0;
     height: screen;
-    /* overflow: hidden; */
   }
 
   .page {
@@ -63,4 +62,10 @@ html {
     margin-bottom: 40px;
   }
 
+}
+
+@media screen and (max-width: 375px) {
+  .projects {
+    margin-top: 100px;
+  }
 }

@@ -23,6 +23,7 @@ export const Global = () => {
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
+      console.log(screenWidth);
       if (screenWidth < 768) {
         setMobile(true);
       } else {

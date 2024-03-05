@@ -9,13 +9,7 @@ export const Home = () => {
   return (
     <div className={`container ${theme}`}>
       <div className="home">
-        <motion.img
-          className="image"
-          alt="Image"
-          src="./images/image1.svg"
-          animate={{ rotate: [0, 90, 180, 270, 360] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-        />
+
 
         <motion.div
           className="div-wrapper-3"
@@ -45,6 +39,13 @@ export const Home = () => {
           >
             Malena Guallar
           </motion.h1>
+          <motion.img
+          className="image"
+          alt="Image"
+          src="./images/image1.svg"
+          animate={{ rotate: [0, 90, 180, 270, 360] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        />
           <motion.p
             className="text-wrapper-4"
             initial={{ opacity: 0, x: -100 }}
