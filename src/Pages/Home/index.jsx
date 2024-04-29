@@ -6,6 +6,8 @@ import { useTheme } from "../../ThemeProvider";
 export const Home = () => {
   const { theme, toggleTheme } = useTheme();
 
+  const date = Date.getFullYear()
+
   return (
     <div className={`container ${theme}`}>
       <div className="home">
@@ -72,7 +74,7 @@ export const Home = () => {
           </div>
 
           <motion.p className="text-wrapper-5">
-            all rights reserved © 2023 Malena Guallar
+            all rights reserved © {date} Malena Guallar
           </motion.p>
         </motion.div>
       </div>
