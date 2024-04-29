@@ -6,7 +6,8 @@ import { useTheme } from "../../ThemeProvider";
 export const Home = () => {
   const { theme, toggleTheme } = useTheme();
 
-  const date = Date.getFullYear()
+  const currentYear = new Date().getFullYear()
+  console.log(currentYear)
 
   return (
     <div className={`container ${theme}`}>
@@ -74,7 +75,7 @@ export const Home = () => {
           </div>
 
           <motion.p className="text-wrapper-5">
-            all rights reserved © {date} Malena Guallar
+            all rights reserved © {currentYear} Malena Guallar
           </motion.p>
         </motion.div>
       </div>
