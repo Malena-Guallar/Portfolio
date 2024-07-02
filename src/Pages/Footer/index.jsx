@@ -1,17 +1,22 @@
 import React from "react";
-import "../Footer/style.css"
+import "../Footer/style.css";
+import { useTheme } from "../../ThemeProvider";
 
 export const Footer = () => {
 
+    const { theme } = useTheme();
+
+    const date = new Date().getFullYear();
+
     return (
-        <div className="footer">
+        <div className={`footer ${theme}`}>
             <div className="footer_infos">
                 <p className="nums">❊ 2711</p>
-                <img className="M" src="./images/M.png" />
-                <p className="name"> &emsp; Malena Guallar © 2023</p> 
+                <img className="M" src={theme === "light" ? "./images/M_red.png" : "./images/M_pink.png"} />
+                <p className="name"> &emsp; Malena Guallar © {date}</p> 
                 <br/>
                 <div className="location_wrapper">
-                    <img className="latlong" src="./images/latlong.png" />
+                    <img className="latlong" src={theme === "light" ? "./images/latlong_red.png" : "./images/latlong_pink.png"} />
                         <p className="location">&emsp;Montreuil ✱, </p>
                         <p className="location"> France 93100</p>
                 </div>

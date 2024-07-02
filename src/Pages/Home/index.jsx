@@ -42,13 +42,15 @@ export const Home = () => {
           >
             Malena Guallar
           </motion.h1>
+
           <motion.img
           className="image"
           alt="Image"
-          src="./images/image1.svg"
+          src={theme === "light" ? "./images/star_red.svg" : "./images/star_pink.svg"}
           animate={{ rotate: [0, 90, 180, 270, 360] }}
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
         />
+
           <motion.p
             className="text-wrapper-4"
             initial={{ opacity: 0, x: -100 }}

@@ -17,12 +17,12 @@
   background-color: var(--background-color);
 }
 
-/* .image {
+.image {
   position: absolute;
   top: 39%;
   left: 55%;
   width: 17%;
-} */
+}
 
 .div-wrapper-1 {
   text-align: left;
@@ -141,9 +141,11 @@
     margin-right: 22px;
   }
 
-  /* .image {
-    top: 35%;
-    left: 55%;
-    width: 10%;
-  } */
+  .image {
+    position: absolute;
+    width: 40%;
+    left: 130%;
+    top: 20%
+
+  }
 }

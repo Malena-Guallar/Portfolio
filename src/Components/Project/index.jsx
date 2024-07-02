@@ -1,5 +1,5 @@
 import React from "react";
-import "../Project/style.css";
+import "./style.css";
 
 const Project = ({ titre, tools, img, link }) => {
 
